@@ -209,6 +209,7 @@ World.add(world, ball);
 
 document.addEventListener('keydown', (event) => {
 	const { x, y } = ball.velocity;
+	document.querySelector('.instructions').classList.add('hidden');
 	if (event.keyCode === 87) {
 		Body.setVelocity(ball, { x, y: y - 5 });
 	}
